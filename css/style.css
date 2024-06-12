@@ -1,0 +1,1269 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,300;1,800&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+
+
+html{scroll-behavior: smooth;}
+
+body{
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.top_btn{
+  position: fixed;
+  right: 40px;
+  bottom: 30px;
+}
+.top_btn a{
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url(../image/arrow.png) no-repeat center center;
+  background-color: #39EE39;
+  transition: 0.35s;
+}
+
+.top_btn a:hover{
+  background: url(../image/arrow2.png) no-repeat center center;
+  background-color: #098f09;
+}
+
+header{
+  width: 100%;
+  height: 100%; 
+}
+
+nav{
+  width: 100%;
+  height: 110px;
+  background: #292929;
+}
+
+#nav_in{
+  /* border: 1px solid #000; */
+  width: 1200px;
+  height: inherit;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gnb{display: flex;}
+.gnb li{
+  margin: 0 20px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+nav .gnb li a{
+  position: relative;
+}
+
+nav .gnb li a:before{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #39EE39;
+  transition: 0.35s
+}
+
+nav .gnb li:hover{
+  color: #39EE39;
+}
+
+nav .gnb li a:hover:before{
+  width: 100%;
+}
+
+
+/* 메인 비주얼 */
+
+main{
+  align-items: center;
+  width: 100%;
+  height: 583px;
+  /* border: 1px solid #000; */
+  overflow: hidden;
+  margin: auto;
+  background: url(../image/texturedrink.png)center center/cover fixed;
+}
+
+
+.visual li{
+  font-weight: 900;
+}
+
+.top{
+  height: 110px;
+  background-color:#1F1F1F;
+  transition: 0.35s;
+}
+
+.visual li:nth-child(2){
+  width: 100%;
+  height: 350px;
+}
+
+.visual .content{
+  /* border: 1px solid #000; */
+  width: 1000px;
+  height: 230px;
+  font-size: 50px;
+  font-weight: 900;
+  color: #333;
+  line-height: 95px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 70px auto 0;
+  position: relative;
+}
+
+.content .drink1{
+  position: absolute;
+  width: 180px;
+  height: 430px;
+  margin: -30px auto 0;
+  left: 730px;
+  z-index: 1;
+}
+
+
+.bottom{
+  height: 130px;
+  background-color:#1F1F1F;
+  margin-top: -50px;
+  transition: 0.35s;
+}
+
+
+.visual:hover .top{
+  transform: translateY(-48px);
+}
+.visual:hover .bottom{
+  transform: translateY(45px);
+}
+
+
+/* 브랜드 소개 */
+
+#Brand{
+  /* border: 1px solid #2b2b2b; */
+  margin-top: -35px;
+  width: 100%;
+  background-color: #2b2b2b;
+}
+
+.Brand_content{
+  width: 1200px;
+  height: 1450px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.brand_text1{
+  margin-top: 35px;
+  width: 730px;
+  display: block;
+}
+
+.brand_text1 h2{
+  font-size: 150px;
+  color: #39EE39;
+}
+
+.brand_text1 p{
+  font-size: 20px;
+  font-weight: 300;
+  color: #39EE39;
+  padding-left: 115px;
+}
+
+
+.brand_text2{
+  /* border: 1px solid #000; */
+  width: 1200px;
+  height: 300px;
+  display: flex;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.brand_text2 .vision{
+  margin: 20px auto;
+  /* border: 1px solid #000; */
+  width: 400px;
+  margin-left: 160px;
+}
+
+.brand_text2 .mission{
+  margin: 20px auto 0;
+  margin-right: 160px;
+  width: 400px;
+}
+
+
+
+.brand_text2 .vision h3{
+  width: 400px;
+  font-size: 25px;
+  padding: 10px 0;
+  background-color: #39EE39;
+  font-weight: 600;
+}
+
+.brand_text2 .mission h3{
+  width: 400px;
+  font-size: 25px;
+  padding: 10px 0;
+  background-color: #39EE39;
+  font-weight: 600;
+}
+
+.vision:hover h3{
+  color: #fff;
+  background-color: #098f09;
+}
+
+.mission:hover h3{
+  color: #fff;
+  background-color: #098f09;
+}
+
+.vision span{
+  margin-top: 25px;
+  display: block;
+  background: linear-gradient(to bottom, #39ee39cc, #39ee3948, #2b2b2b);
+  color: #fff;
+  height: 130px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 30px 30px;
+  line-height: 28px;
+  transform: translateY(-30%);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.mission span{
+  margin-top: 25px;
+  display: block;
+  background: linear-gradient(to bottom, #39ee39cc, #39ee3948, #2b2b2b);
+  color: #fff;
+  height: 130px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 30px 30px;
+  line-height: 28px;
+  transform: translateY(-30%);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.vision:hover span{
+  transform: translateY(5%);
+  transform: scale(1.05);
+  opacity: 1;
+}
+.mission:hover span{
+  transform: translateY(5%);
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.carreers{
+  height: 620px;
+  margin-top: 70px;
+  display: flex;
+  background: url(../image/world.png) no-repeat center right/cover;
+  position: relative;
+}
+
+@keyframes circle-ani {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.circle{
+  opacity: 0;
+  filter: blur(0);
+  transition: 2s;
+}
+
+.carreers:hover .circle{
+  opacity: 1;
+  filter: blur(1px);
+  animation: circle-ani 1s linear infinite alternate;
+}
+
+.circle span:nth-child(1){
+  position: absolute;
+  margin-left: 980px;
+  display: inline-block;
+  background-color: #83ff83;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transform: translateY(-150px);
+  animation-delay: 1s;
+}
+
+.circle span:nth-child(2){
+  position: absolute;
+  margin-left: 850px;
+  display: inline-block;
+  background-color: #83ff83;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transform: translateY(-250px);
+  animation-delay: 0.7s;
+}
+
+.circle span:nth-child(3){
+  position: absolute;
+  margin-left: 670px;
+  display: inline-block;
+  background-color: #83ff83;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transform: translateY(10px);
+  animation-delay: 0.8s;
+}
+
+.circle span:nth-child(4){
+  position: absolute;
+  margin-left: 1010px;
+  display: inline-block;
+  background-color: #83ff83;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transform: translateY(60px);
+  animation-delay: 0s;
+}
+
+.circle span:nth-child(5){
+  position: absolute;
+  margin-left: 800px;
+  display: inline-block;
+  background-color: #83ff83;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transform: translateY(-150px);
+  animation-delay: 1s;
+}
+
+
+.carreers_text{
+  background-color: #39ee39d3;
+  width: 600px;
+  height: 440px;
+  padding-top: 180px;
+  transition: 0.3s;
+}
+
+.carreers:hover .carreers_text{
+  transform: translate(7px,-7px);
+}
+
+
+.carreers_text h3{
+  color: #333;
+  padding-left: 115px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+.carreers_text h4{
+  color: #333;
+  padding-left: 115px;
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.carreers_text h4 strong{
+  color: #8EFF59;
+}
+
+.carreers_text p{
+  width: 390px;
+  height: 200px;
+  padding-left: 115px;
+  margin-top: 10px; 
+  line-height: 28px;
+  font-weight: 300;
+  color: #fff;
+}
+
+
+
+/* product */
+
+#Product{
+  width: 100%;
+  background-color: #D9D9D9;
+}
+
+.product_content{
+  /* border: 1px solid #000; */
+  width: 1200px;
+  height: 1000px;
+  margin: auto;
+  overflow: hidden;
+  width: 1200px;
+  height: 900px;
+}
+
+.product_content h2{
+  /* border: 1px solid #000; */
+  display: block;
+  margin-top: 20px;
+  width: 730px;
+  font-size: 150px;
+  color: #00C800;
+  transform: translateX(468px);
+}
+
+.drink_flavor1{
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 28px;
+  margin-left: 140px;
+  margin-top: 190px;
+  background-color: #00C800;
+  transition: 0.3s;
+}
+
+.drink_flavor1 span{
+  color: #fff;
+  margin-left: 10px;
+}
+
+.flavor_text img{
+  margin-left: -190px;
+}
+
+
+.drink_flavor1 .flavor_text{
+  position: absolute;
+  width: 1200px;
+  height: 490px;
+  background-color: #39EE39;
+  margin-left: 420px;
+  padding: 1px 100px;
+  display: flex;
+  margin-top: -100px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.drink_flavor1 .flavor_text h3{
+  font-size: 50px;
+  font-weight: 800;
+  color: #333;
+  line-height: 50px;
+  margin-top: 60px;
+  margin-left: 25px;
+}
+
+.drink_flavor1 .flavor_text em{
+  background-color: #B9FF98;
+  margin-top: 190px;
+  transform: translateX(-140%);
+  padding: 5px 50px;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  height: 30px;
+}
+
+.drink_flavor1 .flavor_text p{
+/*   border: 1px solid #000; */
+  margin-top: 250px;
+  transform: translateX(-144%); 
+  padding: 24px;
+  width: 240px;
+  height: 150px;
+  color: #fff;
+  background: linear-gradient(to bottom, #216C21, #22B122);
+  font-weight: 200;
+}
+
+.drink_flavor1:hover{
+  background-color: #098f09;
+  cursor: pointer
+}
+
+.drink_flavor1:hover .flavor_text{
+  opacity: 1;
+}
+
+
+/*  음료수 맛2번째 */
+
+
+.drink_flavor2 {
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 28px;
+  margin-left: 190px;
+  margin-top: -28px;
+  background-color: #00C800;
+  transition: 0.3s;
+}
+
+.drink_flavor2 span{
+  color: #fff;
+  margin-left: 10px;
+}
+
+.drink_flavor2 .flavor_text{
+  position: absolute;
+  width: 1200px;
+  height: 490px;
+  background-color: #39EE39;
+  margin-left: 370px;
+  padding: 1px 100px;
+  display: flex;
+  margin-top: -100px;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.drink_flavor2 .flavor_text h3{
+  font-size: 50px;
+  font-weight: 800;
+  color: #333;
+  line-height: 50px;
+  margin-top: 60px;
+  margin-left: 25px;
+}
+
+.drink_flavor2 .flavor_text em{
+  background-color: #B9FF98;
+  margin-top: 190px;
+  transform: translateX(-182%);
+  padding: 5px 50px;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  height: 30px;
+}
+
+.drink_flavor2 .flavor_text p{
+/*   border: 1px solid #000; */
+  margin-top: 250px;
+  transform: translateX(-169%); 
+  padding: 24px;
+  width: 240px;
+  height: 150px;
+  color: #fff;
+  background: linear-gradient(to bottom, #216C21, #22B122);
+  font-weight: 200;
+}
+
+.drink_flavor2:hover{
+  background-color: #098f09;
+  cursor: pointer
+}
+
+.drink_flavor2:hover .flavor_text{
+  opacity: 1;
+}
+
+/* 음료수 맛3번째/////////// */
+
+
+.drink_flavor3 {
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 28px;
+  margin-left: 240px;
+  margin-top: -28px;
+  background-color: #00C800;
+  transition: 0.3s;
+}
+
+.drink_flavor3 span{
+  color: #fff;
+  margin-left: 10px;
+}
+
+.drink_flavor3 .flavor_text{
+  position: absolute;
+  width: 1200px;
+  height: 490px;
+  background-color: #39EE39;
+  margin-left: 319px;
+  padding: 1px 100px;
+  display: flex;
+  margin-top: -100px;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.drink_flavor3 .flavor_text h3{
+  font-size: 50px;
+  font-weight: 800;
+  color: #333;
+  line-height: 50px;
+  margin-top: 60px;
+  margin-left: 25px;
+}
+
+.drink_flavor3 .flavor_text em{
+  background-color: #B9FF98;
+  margin-top: 190px;
+  transform: translateX(-182%);
+  padding: 5px 50px;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  height: 30px;
+}
+
+.drink_flavor3 .flavor_text p{
+/*   border: 1px solid #000; */
+  margin-top: 250px;
+  transform: translateX(-169%); 
+  padding: 24px;
+  width: 240px;
+  height: 150px;
+  color: #fff;
+  background: linear-gradient(to bottom, #216C21, #22B122);
+  font-weight: 200;
+}
+
+.drink_flavor3:hover{
+  background-color: #098f09;
+  cursor: pointer
+}
+
+.drink_flavor3:hover .flavor_text{
+  opacity: 1;
+}
+
+
+/* 음료수 맛4번째////////////// */
+.drink_flavor4 {
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 28px;
+  margin-left: 140px;
+  margin-top: 15px;
+  background-color: #00C800;
+  transition: 0.3s;
+}
+
+.drink_flavor4 span{
+  color: #fff;
+  margin-left: 10px;
+}
+
+.drink_flavor4 .flavor_text{
+  position: absolute;
+  width: 1200px;
+  height: 490px;
+  background-color: #39EE39;
+  margin-left: 420px;
+  padding: 1px 100px;
+  display: flex;
+  margin-top: -143px;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.drink_flavor4 .flavor_text h3{
+  font-size: 50px;
+  font-weight: 800;
+  color: #333;
+  line-height: 50px;
+  margin-top: 60px;
+  margin-left: 25px;
+}
+
+.drink_flavor4 .flavor_text em{
+  background-color: #B9FF98;
+  margin-top: 190px;
+  transform: translateX(-196%);
+  padding: 5px 50px;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  height: 30px;
+}
+
+.drink_flavor4 .flavor_text p{
+/*   border: 1px solid #000; */
+  margin-top: 250px;
+  transform: translateX(-178%); 
+  padding: 24px;
+  width: 240px;
+  height: 150px;
+  color: #fff;
+  background: linear-gradient(to bottom, #216C21, #22B122);
+  font-weight: 200;
+}
+
+.drink_flavor4:hover{
+  background-color: #098f09;
+  cursor: pointer
+}
+
+.drink_flavor4:hover .flavor_text{
+  opacity: 1;
+}
+
+
+/* 음료수5번째/////////// */
+
+.drink_flavor5 {
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 28px;
+  margin-left: 190px;
+  margin-top: -28px;
+  background-color: #00C800;
+  transition: 0.3s;
+}
+
+.drink_flavor5 span{
+  color: #fff;
+  margin-left: 10px;
+}
+
+.drink_flavor5 .flavor_text{
+  position: absolute;
+  width: 1200px;
+  height: 490px;
+  background-color: #39EE39;
+  margin-left:371px;
+  padding: 1px 100px;
+  display: flex;
+  margin-top: -143px;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.drink_flavor5 .flavor_text h3{
+  font-size: 50px;
+  font-weight: 800;
+  color: #333;
+  line-height: 50px;
+  margin-top: 60px;
+  margin-left: 25px;
+}
+
+.drink_flavor5 .flavor_text em{
+  background-color: #B9FF98;
+  margin-top: 190px;
+  transform: translateX(-224%);
+  padding: 5px 50px;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  height: 30px;
+}
+
+.drink_flavor5 .flavor_text p{
+/*   border: 1px solid #000; */
+  margin-top: 250px;
+  transform: translateX(-195%); 
+  padding: 24px;
+  width: 240px;
+  height: 150px;
+  color: #fff;
+  background: linear-gradient(to bottom, #216C21, #22B122);
+  font-weight: 200;
+}
+
+.drink_flavor5:hover{
+  background-color: #098f09;
+  cursor: pointer
+}
+
+.drink_flavor5:hover .flavor_text{
+  opacity: 1;
+}
+
+/* 음료수6번째////////////////// */
+
+.drink_flavor6 {
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 28px;
+  margin-left: 240px;
+  margin-top: -28px;
+  background-color: #00C800;
+  transition: 0.3s;
+}
+
+.drink_flavor6 span{
+  color: #fff;
+  margin-left: 10px;
+}
+
+.drink_flavor6 .flavor_text{
+  position: absolute;
+  width: 1200px;
+  height: 490px;
+  background-color: #39EE39;
+  margin-left:321px;
+  padding: 1px 100px;
+  display: flex;
+  margin-top: -143px;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.drink_flavor6 .flavor_text h3{
+  font-size: 50px;
+  font-weight: 800;
+  color: #333;
+  line-height: 50px;
+  margin-top: 60px;
+  margin-left: 25px;
+}
+
+.drink_flavor6 .flavor_text em{
+  background-color: #B9FF98;
+  margin-top: 190px;
+  transform: translateX(-192%);
+  padding: 5px 50px;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  height: 30px;
+}
+
+.drink_flavor6 .flavor_text p{
+/*   border: 1px solid #000; */
+  margin-top: 250px;
+  transform: translateX(-175%); 
+  padding: 24px;
+  width: 240px;
+  height: 150px;
+  color: #fff;
+  background: linear-gradient(to bottom, #216C21, #22B122);
+  font-weight: 200;
+}
+
+.drink_flavor6:hover{
+  background-color: #098f09;
+  cursor: pointer
+}
+
+.drink_flavor6:hover img{
+  transform: rotateY(360deg);
+}
+
+.drink_flavor6:hover .flavor_text{
+  opacity: 1;
+}
+
+
+/* 보이지않는 음료수 부분 ////////// */
+
+
+.drink_flavor7 {
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 28px;
+  margin-left: 200px;
+  margin-top: 58px;
+  background-color: #00C800;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.drink_flavor7 span{
+  color: #fff;
+  margin-left: 10px;
+  opacity: 0;
+}
+
+.drink_flavor7 .flavor_text{
+  position: absolute;
+  width: 1200px;
+  height: 490px;
+  background-color: #39EE39;
+  margin-left:360px;
+  padding: 1px 100px;
+  display: flex;
+  margin-top: -230px;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.drink_flavor7 .flavor_text h3{
+  font-size: 50px;
+  font-weight: 800;
+  color: #333;
+  line-height: 50px;
+  margin-top: 60px;
+  margin-left: 25px;
+}
+
+.drink_flavor7 .flavor_text em{
+  background-color: #B9FF98;
+  margin-top: 190px;
+  transform: translateX(-192%);
+  padding: 5px 50px;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  height: 30px;
+}
+
+.drink_flavor7 .flavor_text p{
+/*   border: 1px solid #000; */
+  margin-top: 250px;
+  transform: translateX(-175%); 
+  padding: 24px;
+  width: 240px;
+  height: 150px;
+  color: #fff;
+  background: linear-gradient(to bottom, #216C21, #22B122);
+  font-weight: 200;
+}
+
+.drink_flavor7:hover{
+  background-color: #098f09;
+}
+
+.drink_flavor7:hover .flavor_text{
+  opacity: 0;
+}
+
+
+/* PROGRAM //////////////////////////////////// */
+
+#Program{
+  width: 100%;
+  background-color: #2b2b2b;
+}
+
+.program_content{
+  width: 1200px;
+  height: 1150px;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+.program_text h2{
+  margin-top: 30px;
+  font-size: 150px;
+  color: #39EE39;
+}
+
+.program_text h3{
+  color: #39EE39;;
+  font-size: 30px;
+  padding-left: 115px;
+  margin-top: 30px;
+}
+
+.program_text p{
+  font-size: 20px;
+  font-weight: 300;
+  color: #39EE39;
+  padding-left: 115px;
+  margin-top: 10px;
+  width: 860px;
+  line-height: 30px;
+  display: block;
+}
+
+.program_text button{
+  border: none;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 60px;
+  margin-top: 30px;
+  margin-left: 115px;
+  background-color: #39EE39;
+  color: #333;
+  cursor: pointer
+}
+
+.program_text button:hover{
+  background-color: #098f09;
+  font-weight: 600;
+  color: #fff;
+}
+
+.elipse{
+  display: inline;
+}
+
+.set_active{
+  background: url(../image/Ellipse.png) no-repeat;
+  background-position-y: 50px;
+  background-position-x: 70px;
+  position: relative;
+}
+
+
+
+.set_active img:nth-child(1){
+  width: 600px;
+  position: absolute;
+  top: 230px;
+  left: 200px;
+  transition: 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  z-index: 1;
+}
+
+.set_active img:nth-child(2){
+  margin-left: 500px;
+  margin-top: -150px;
+  transition: 0.6s cubic-bezier(0.68, -0.6, 0.32, 2);
+}
+
+.set_active:hover img{
+  transform: translateY(-80px);
+}
+
+/* FAQ ///////////// */
+
+
+#FAQ{
+  width: 100%;
+  background-color: #D9D9D9;
+}
+
+.FAQ_content{
+  width: 1200px;
+  height: 990px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.FAQ_content h2{
+  display: block;
+  margin-top: 20px;
+  width: 730px;
+  font-size: 150px;
+  color: #00C800;
+  transform: translateX(880px);
+}
+
+.FAQ_text{
+  height: 650px;
+}
+
+.FAQ_text h3{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  padding: 20px;
+  margin-top: 35px;
+}
+
+.FAQ_list{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.FAQ_list li:nth-child(1){
+  width: 600px;
+  height: 130px;
+  transform: translateX(50%);
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.FAQ_list li:nth-child(2){
+  width: 600px;
+  height: 130px;
+  transform: translateX(50%);
+  transition: 0.5s;
+  overflow: hidden;
+}
+.FAQ_list li:nth-child(3){
+  width: 600px;
+  height: 130px;
+  transform: translateX(50%);
+  transition: 0.5s;
+  overflow: hidden;
+}
+.FAQ_list li:nth-child(4){
+
+  width: 600px;
+  height: 130px;
+  transform: translateX(50%);
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.FAQ_list h4{
+  position: relative;
+  display: block;
+  width: 600px;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #38E338;
+  box-sizing: border-box;
+}
+
+.FAQ_list P{
+  position: absolute;
+  top:-22px;
+  width: 600px;
+  padding: 30px 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+  background-color: #333;
+  box-sizing: border-box;
+  z-index: -1;
+  transition: 0.45s;
+} 
+
+.FAQ_list li:hover p{
+  transform: translateY(72px);
+}
+
+
+
+/*  footer */
+
+
+.footer{
+  width: 100%;
+  background-color: #2b2b2b;
+}
+
+.footer_content{
+  width: 1200px;
+  height: 250px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.footer_text{
+  display: flex;
+}
+
+.footer_text img{
+  padding: 20px;
+  margin-top: 45px;
+}
+
+.footer_group{
+  position: absolute;
+  display: flex;
+  width: 500px;
+  height: 90px;
+  top: 60px;
+  left: 800px;
+  color: #fff;;
+  padding: 10px;
+}
+
+.footer_group span{
+  font-weight: 200;
+  word-spacing: 20px;
+  display: inline-block;
+}
+
+.footer_group em{
+  word-spacing: 5px;
+  font-style: normal;
+  transition: 0.3s;
+}
+
+.footer_icon{
+  margin-top: 45px;
+  margin-left: -180px;
+}
+
+.footer_icon a:nth-child(1){
+  border: 1px solid #fff;
+  padding: 5px 11px;
+  border-radius: 60%;
+  margin-right: 10px;
+}
+
+.footer_icon a:nth-child(2){
+  border: 1px solid #fff;
+  padding: 5px 9px;
+  border-radius: 60%;
+  margin-right: 10px;
+}
+
+.footer_icon a:nth-child(3){
+  border: 1px solid #fff;
+  padding: 5px 9px;
+  border-radius: 60%;
+  margin-right: 10px;
+}
+
+.footer_icon a:nth-child(4){
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 60%;
+}
+
+
+.footer_text h5{
+  color: #888888;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 12px;
+  position: absolute;
+  top: 180px;
+  left: 890px;
+}
+
+.footer_group em:nth-child(1):hover{
+  color: #38E338;
+  cursor: pointer
+}
+.footer_group em:nth-child(2):hover{
+  color: #38E338;
+  cursor: pointer
+}
+.footer_group em:nth-child(3):hover{
+  color: #38E338;
+  cursor: pointer
+}
+.footer_group em:nth-child(4):hover{
+  color: #38E338;
+  cursor: pointer
+}
+
+
+
+
